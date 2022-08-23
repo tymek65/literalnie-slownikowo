@@ -1,0 +1,31 @@
+.slownikowoMain
+    padding: 0
+    margin: 0
+    font-family: -apple-system, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: var(--body-color)
+    color: var(--font-color)
+    font-weight: 700
+    transition: 0.66s ease-in-out
+    min-height: 100%
+    display: grid
+    grid-template-rows: 1fr min-content 1fr
+    padding: 5px
+
+    input[type='text']
+        border: none
+        outline: none
+        width: 300px
+        text-align: center
+        font-weight: bold
+        font-size: 40px
+        transition: 0.66s ease-in-out
+        color: var(--font-color)
+        text-transform: uppercase
+        background-color: var(--body-color)
+    form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    input[type='text']:disabled
+        background-color: var(--body-color)

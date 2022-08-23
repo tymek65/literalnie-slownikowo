@@ -1,26 +1,81 @@
+:root {
+  --body-color: #ffffff;
+  --font-color: black;
+  --border-default: #d3d6da;
+  --tile-bad: #787c7e;
+  --keyboard-default: #d3d6da;
+  --sredni-key: #b59f3b;
+  --dobrze-key: #538d4e;
+  --key-alternate: white;
+  --border-color: #d3d6da;
+  --bombowo-secondary: #d3d6da;
+}
+[data-theme='lighttrue'] {
+  --body-color: #ffffff;
+  --font-color: black;
+  --border-default: #d3d6da;
+  --tile-bad: #787c7e;
+  --keyboard-default: #d3d6da;
+  --sredni-key: #85c0f9;
+  --dobrze-key: #f5793a;
+  --key-alternate: white;
+  --border-color: #d3d6da;
+  --bombowo-secondary: #d3d6da;
+}
+[data-theme='darkfalse'] {
+  --body-color: #121213;
+  --font-color: white;
+  --keyboard-default: #818384;
+  --tile-bad: #3a3a3c;
+  --sredni-key: #b59f3b;
+  --dobrze-key: #538d4e;
+  --key-alternate: white;
+  --border-color: #3a3a3c;
+  --bombowo-secondary: #262626;
+}
+[data-theme='darktrue'] {
+  --body-color: #121213;
+  --font-color: white;
+  --keyboard-default: #818384;
+  --tile-bad: #3a3a3c;
+  --sredni-key: #85c0f9;
+  --dobrze-key: #f5793a;
+  --key-alternate: white;
+  --border-color: #3a3a3c;
+  --bombowo-secondary: #262626;
+}
+#__next,
+#__next > .slownikowoMain,
+body,
+html {
+  height: 100%;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--body-color);
+  color: var(--font-color);
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button {
+  cursor: pointer;
+}
+#__next,
+#__next > .main {
+  height: 100%;
+}
+svg {
+  color: var(--font-color);
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
